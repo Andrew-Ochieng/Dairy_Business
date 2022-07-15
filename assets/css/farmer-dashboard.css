@@ -13,31 +13,46 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-/* navbar */
-nav {
+/* sidebarbar */
+.dashboard {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: green;
     color: white;
-    padding: 2% 4%;
 }
 
-.nav-list {
+.sidebar-container {
+    padding: 2% 4%;
+    max-width: 40%;
+    height: 660px;
+    background-color: green;
+}
+.sidebar {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
     list-style: none;
-    gap: 20%;
+    gap: 100px;
 }
 
-.nav-list li a {
+.sidebar-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    /* justify-content: space-between; */
+    list-style: none;
+    gap: 50px;
+}
+
+.sidebar-list li a {
     color: white;
     text-decoration: none;
 }
 
-#nav-farmer {
+#sidebar-farmer {
     font-size: 800;
     border: none;
     border-radius: 10px;
@@ -45,7 +60,7 @@ nav {
     background-color: gray;
 }
 
-#nav-admin {
+#sidebar-admin {
     font-size: 800;
     color: black;
     border: none;
