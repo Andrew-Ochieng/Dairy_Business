@@ -24,16 +24,15 @@ body {
 
 .sidebar-container {
     padding: 2% 4%;
-    max-width: 40%;
+    max-width: 600px;
     height: 660px;
     background-color: green;
 }
 .sidebar {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-between;
-    list-style: none;
     gap: 100px;
 }
 
@@ -52,15 +51,14 @@ body {
     text-decoration: none;
 }
 
-#sidebar-farmer {
-    font-size: 800;
+#overview {
     border: none;
     border-radius: 10px;
-    padding: 12px 24px;
+    padding: 10% 80%;
     background-color: gray;
 }
 
-#sidebar-admin {
+#logout {
     font-size: 800;
     color: black;
     border: none;
@@ -68,6 +66,7 @@ body {
     padding: 12px 24px;
     background-color: white;
 }
+
 
 
 /* hero */
