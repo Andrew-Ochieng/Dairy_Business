@@ -86,20 +86,97 @@ body {
 
 /* main-content */
 .main-content {
+    color: black;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 300%;
-    margin: 4%;
+    margin: 2% 4%;
 }
 
-.col-1 {
-    
+.col-content {
+
 }
 
-.col-2 {
-    max-width: 40%;
+.dashboard-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 640px;
 }
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #36856c;
+    border-radius: 10px;
+    padding: 1% 3%;
+    gap: 8px;
+}
+
+.profile i {
+    color: white;
+    font-size: 40px;
+}
+
+.profile p {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+
+/* milk-production */
+.production-inputs {
+    margin: 4% 0;
+}
+
+#milk {
+    padding: 1% 3%;
+    border: 2px 2px #36856c;
+}
+
+#milk-submit {
+    padding: 1.2% 3%;
+    border: none;
+    background-color: #36856c;
+}
+
+
+/* milk-sales */
+.sales-inputs {
+    margin: 4% 0;
+}
+
+#input-sales {
+    padding: 1% 3%;
+    border: 2px 2px #36856c;
+}
+
+#sales-submit {
+    padding: 1.2% 3%;
+    border: none;
+    background-color: #36856c;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

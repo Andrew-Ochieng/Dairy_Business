@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ukulima Farm</title>
     <link rel="stylesheet" href="./assets/css/farmer-dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
     <!-- dashboard -->
@@ -43,38 +45,45 @@
 
             <!--main-content-->
             <div class="main-content">
-                <div class="col-1">
-                    <ul class="col-list">
-                        <li>
-                            <a id="overview" href="#">Overview</a>
-                        </li>
-                        <li>
-                            <a href="#">Production</a>
-                        </li>
-                        <li>
-                            <a href="#">Sales</a>
-                        </li>
-                        <li>
-                            <a href="#">Plans</a>
-                        </li>
-                    </ul>
-                </div>
+                <div class="col-content">
+                    <!--content-header-->
+                    <div class="dashboard-title">
+                        <div>
+                            <h2>Good Evening!</h2>
+                        </div>
+                        <div class="profile">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            <p>Andrew Ochieng</p>
+                        </div>
+                    </div>
 
-                <div class="col-2">
-                    <ul class="col2-list">
-                        <li>
-                            <a id="overview" href="#">Overview</a>
-                        </li>
-                        <li>
-                            <a href="#">Production</a>
-                        </li>
-                        <li>
-                            <a href="#">Sales</a>
-                        </li>
-                        <li>
-                            <a href="#">Plans</a>
-                        </li>
-                    </ul>
+                    <!--milk-production-->
+                    <div class="production-title">
+                        <h1>Milk Production</h1>
+                        <div>
+                            <div class="production-inputs">
+                                <input type="text" id="milk" placeholder="Enter daily milk production..">
+                                <button id="milk-submit">
+                                    Submit
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <!--milk-sales-->
+                    <div class="sales">
+                        <h1>Milk Sales</h1>
+                        <div>
+                            <div class="sales-inputs">
+                                <input type="text" id="input-sales" placeholder="Enter daily milk production..">
+                                <button id="sales-submit">
+                                    Submit
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
