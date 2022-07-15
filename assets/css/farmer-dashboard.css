@@ -18,13 +18,13 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     color: white;
 }
 
 .sidebar-container {
     padding: 2% 4%;
-    max-width: 600px;
+    max-width: 40%;
     height: 660px;
     background-color: green;
 }
@@ -54,7 +54,7 @@ body {
 #overview {
     border: none;
     border-radius: 10px;
-    padding: 10% 80%;
+    padding: 10% 50%;
     background-color: gray;
 }
 
@@ -69,8 +69,13 @@ body {
 
 
 
-/* hero */
-
+/* main-content */
+.main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 4%;
+}
 
 
 
