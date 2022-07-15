@@ -19,7 +19,7 @@ nav {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: #13e60d;
+    background-color: #36856c;
     color: white;
     padding: 2% 4%;
 }
@@ -38,15 +38,16 @@ nav {
 }
 
 #nav-farmer {
-    font-size: 800;
+    color: black;
+    font-weight: 600;
     border: none;
     border-radius: 10px;
     padding: 12px 24px;
-    background-color: gray;
+    background-color: #E1FC67;
 }
 
 #nav-admin {
-    font-size: 800;
+    font-weight: 600;
     color: black;
     border: none;
     border-radius: 10px;

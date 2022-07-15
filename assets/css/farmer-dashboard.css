@@ -28,7 +28,7 @@ body {
 }
 
 .sidebar-container {
-    padding: 2% 4%;
+    padding: 2%;
     max-width: 40%;
     height: 680px;
     background-color: #36856c;
@@ -37,7 +37,7 @@ body {
 .sidebar-list {
     display: flex;
     flex-direction: column;
-    text-align: left;
+    text-align: center;
     list-style: none;
     gap: 32px;
 }
@@ -60,6 +60,20 @@ body {
     background-color: #E1FC67;
 }
 
+#overview:hover {
+    border: none;
+    border-radius: 10px;
+    padding: 6% 16%;
+    background-color: #4d5d09;
+}
+
+#links:hover {
+    border: none;
+    border-radius: 10px;
+    padding: 6% 16%;
+    background-color: #dbe3b99f;
+}
+
 #logout {
     font-size: 800;
     color: black;
@@ -80,7 +94,7 @@ body {
 }
 
 .col-1 {
-
+    
 }
 
 .col-2 {
