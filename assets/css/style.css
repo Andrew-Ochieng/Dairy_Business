@@ -57,8 +57,16 @@ nav {
 
 
 /* hero */
+.hero {
+    padding: 0 0 40% 0;
+    width: auto;
+    background-image: url('../images/hero-1.jpg');
+    background-image: contain;
+}
 
-
+.hero-img {
+    
+}
 
 
 
