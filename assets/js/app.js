@@ -19,56 +19,70 @@ greetings()
 
 
 
-
-//inputs
-//initialize variables
-const shadeNum = document.getElementById('shade-num')
+//initialize input variables
+// production variables
 const milkAmount = document.getElementById('milk-amount')
 const inputs = document.getElementById('form-inputs');
-const postAmount = document.getElementById('post-amount')
-const shadeOutput = document.getElementById('shade-output')
-const milkOutput = document.getElementById('milk-output')
-const amountOutput = document.getElementById('amount-output')
+const dailyReport = document.getElementById('daily-report')
+const shedA = document.getElementById('shed-a')
+const shedB = document.getElementById('shed-b')
+const shedC = document.getElementById('shed-c')
+const shedD = document.getElementById('shed-d')
 
+
+// add event listener
 inputs.addEventListener('submit', (e) => {
     e.preventDefault()
 
-    submitInputs()
+    totalProduction();
+
+    // incomeOverTime();
 })
 
 
-let submitInputs = () => {
-
-    if (shadeNum != '' && milkAmount != '') {
+let totalProduction = () => {
+    if (shedA != '' && shedB != '' && shedC != '' && shedD != '') {
         // creating new element and adding value to it
-        let newShadeNum = document.createElement('LI')
-        newShadeNum.appendChild(document.createTextNode(shadeNum.value))
+        let newShedA = document.createElement('LI')
+        newShedA.appendChild(document.createTextNode(shedA.value))
 
-        let newMilkAmount = document.createElement('LI')
-        newMilkAmount.appendChild(document.createTextNode(milkAmount.value))
-    
-        // adding li to ul
-        shadeOutput.appendChild(newShadeNum)
+        let newShedB = document.createElement('LI')
+        newShedB.appendChild(document.createTextNode(shedB.value))
 
-        milkOutput.appendChild(newMilkAmount)
+        let newShedC = document.createElement('LI')
+        newShedC.appendChild(document.createTextNode(shedC.value))
+
+        let newShedD = document.createElement('LI')
+        newShedD.appendChild(document.createTextNode(shedD.value))
+
+        //adding li to ul
+        dailyReport.appendChild(newShedA)
+        weeklyReport.appendChild(newShedB)
+        dailyReport.appendChild(newShedC)
+        dailyReport.appendChild(newShedD)
+
+        // dailyFinalReport = 'Your production in Shed A is' + dailyReport
 
     } else {
-        console.log('inputs cannot be empty')
+        console.log('inputs cannot be empty!')
     }
 
-    //reset input boxes
-    shadeNum.value = '';
-    milkAmount.value = '';
-
-
-
+    // reset input boxes
+    shedA.value = '';
+    shedB.value = '';
+    shedC.value = '';
+    shedD.value = '';
+    
+    
 }
 
+totalProduction()
 
 
+// income function
+// let incomeOverTime = () => {
 
-
-
+// }
 
 
 

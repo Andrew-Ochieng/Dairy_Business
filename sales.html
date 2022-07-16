@@ -59,48 +59,35 @@
                     
 
                     <!--sales-report-->
-                    <div class="production-title">
+                    <div class="sales-title">
                         <h1>Sales Report</h1>
+
+                        <!--sales-report-display-->
                         <div>
-                            <div class="production-inputs">
-                                <input type="text" id="milk" placeholder="Enter daily milk production..">
-                                <button id="milk-submit">
-                                    Submit
-                                </button>
+                            <!--total milk in all shades-->
+                            <div class="daily-output">
+                                <ul id="day-output">
+                                    <span>Day</span>
+                                </ul>
+                                <ul id="week-output">
+                                    <span>Week</span>
+                                </ul>
+                                <ul id="month-output">
+                                    <span>Month</span>
+                                </ul>
+                                <ul id="shade-output">
+                                    <span>Shade Number</span>
+                                </ul>
+                                <ul id="milk-output">
+                                    <span>Amount of Milk</span>
+                                </ul>
+                            </div>
+
+                            <div class="totalLiters">
+
                             </div>
                         </div>
                         
-                        <!--sales-reort-display-->
-                        <div>
-                            <!--total milk in all shades-->
-                            <table>
-                                <tr>
-                                  <th>Shades</th>
-                                  <th>Amount of Milk recived per day</th>
-                                  <th>Enter milk amounts</th>
-                                </tr>
-                                <tr>
-                                    <td>A</td>
-                                    <td>Your productionin shade A per day is: {{ milk }}</td>
-                                    <td>Edit</td>
-                                </tr>
-                                <tr>
-                                    <td>B</td>
-                                    <td>Your productionin shade B per day is: {{ milk }}</td>
-                                    <td>Edit</td>
-                                </tr>
-                                <tr>
-                                    <td>C</td>
-                                    <td>Your productionin shade B per day is: {{ milk }}</td>
-                                    <td>Edit</td>
-                                </tr>
-                                <tr>
-                                    <td>D</td>
-                                    <td>Your productionin shade B per day is: {{ milk }}</td>
-                                    <td>Edit</td>
-                                </tr>
-                              </table> 
-                        </div>
 
                     </div>
 

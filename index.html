@@ -63,55 +63,25 @@
                         <div>
                             <!--inputs-->
                             <form id="form-inputs" method="post">
-                                <div class="duration">
-                                    <div class="select">
-                                        <label for="day">Day</label>
-                                        <select name="day" id="day">
-                                            <option value="monday">Monday</option>
-                                            <option value="tuesday">Tuesday</option>
-                                            <option value="wednesday">Wednesday</option>
-                                            <option value="thursday">Thursday</option>
-                                            <option value="friday">Friday</option>
-                                            <option value="saturday">Saturday</option>
-                                            <option value="sunday">Sunday</option>
-                                        </select>
+                                <div class="production-details">
+                                    <div class="details-input">
+                                        <label for="shed-a">Shed A:</label>
+                                        <input type="number" id="shed-a" placeholder="Enter amount of milk..">
                                     </div>
-                                    <div class="select">
-                                        <label for="week">Week</label>
-                                        <select name="week" id="week">
-                                            <option value="one">1</option>
-                                            <option value="two">2</option>
-                                            <option value="three">3</option>
-                                            <option value="four">4</option>
-                                        </select>
-                                    </div>
-                                    <div class="select">
-                                        <label for="month">Month</label>
-                                        <select name="month" id="month">
-                                            <option value="January">January</option>
-                                            <option value="February">February</option>
-                                            <option value="March">March</option>
-                                            <option value="April">April</option>
-                                            <option value="May">May</option>
-                                            <option value="June">June</option>
-                                            <option value="July">July</option>
-                                            <option value="August">August</option>
-                                            <option value="September">September</option>
-                                            <option value="October">October</option>
-                                            <option value="November">November</option>
-                                            <option value="December">December</option>
-                                        </select>
+                                    <div class="details-input">
+                                        <label for="shed-b">Shed B:</label>
+                                        <input type="number" id="shed-b" placeholder="Enter amount of milk..">
                                     </div>
                                 </div>
 
                                 <div class="production-details">
                                     <div class="details-input">
-                                        <label for="shade-nuber">Shade Number</label>
-                                        <input type="text" id="shade-num" placeholder="Enter shade number..">
+                                        <label for="shed-c">Shed C:</label>
+                                        <input type="number" id="shed-c" placeholder="Enter amount of milk..">
                                     </div>
                                     <div class="details-input">
-                                        <label for="milk-amount">Amount of Milk/day</label>
-                                        <input type="number" id="milk-amount" placeholder="Enter amount of milk/day..">
+                                        <label for="shed-d">Shed D:</label>
+                                        <input type="number" id="shed-d" placeholder="Enter amount of milk..">
                                     </div>
                                     <div>
                                         <input id="submit" type="submit" value="Submit">
@@ -125,20 +95,11 @@
                         <div>
                             <!--total milk in all shades-->
                             <div class="daily-output">
-                                <ul id="day-output">
-                                    <span>Day</span>
+                                <ul id="daily-report">
+                                    <span>Daily Report</span>
                                 </ul>
                                 <ul id="week-output">
-                                    <span>Week</span>
-                                </ul>
-                                <ul id="month-output">
-                                    <span>Month</span>
-                                </ul>
-                                <ul id="shade-output">
-                                    <span>Shade Number</span>
-                                </ul>
-                                <ul id="milk-output">
-                                    <span>Amount of Milk</span>
+                                    <span>Weekly Report</span>
                                 </ul>
                             </div>
                         </div>

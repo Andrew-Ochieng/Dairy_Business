@@ -189,7 +189,7 @@ select {
 .details-input {
     display: flex;
     flex-direction: column;
-    margin: 0 0 16% 0;
+    margin: 0 0 10% 0;
 }
 
 .details-input label {
@@ -206,8 +206,8 @@ select {
 #submit {
     font-size: 20px;
     float: right;
-    padding: 4% 8%;
-    margin: 0 0 8% 0;
+    padding: 4% 10%;
+    margin: 0 0 4% 0;
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -223,8 +223,7 @@ select {
     background-color: #dafb41;
     padding: 2% 4%;
     border-radius: 10px;
-    list-style: none;
-    
+    list-style: none;  
 }
 
 .daily-output li {
@@ -234,7 +233,6 @@ select {
 .daily-output span {
     font-weight: 600;
     color: #14664b;
-
 }
 
 
