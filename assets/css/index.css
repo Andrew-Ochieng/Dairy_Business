@@ -220,9 +220,22 @@ select {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: #dafb41;
+    padding: 2% 4%;
+    border-radius: 10px;
+    list-style: none;
+    
 }
 
+.daily-output li {
+    list-style: none;
+}
 
+.daily-output span {
+    font-weight: 600;
+    color: #14664b;
+
+}
 
 
 
