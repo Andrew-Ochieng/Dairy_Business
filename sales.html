@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ukulima Farm</title>
-    <link rel="stylesheet" href="./assets/css/farmer-dashboard.css">
+    <link rel="stylesheet" href="./assets/css/sales.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
@@ -21,23 +21,23 @@
                         <div class="logo">
                             <h1>Ukulima Farm</h1>
                         </div>
-                        <li id="overview">
-                            <a href="#">Overview</a>
+                        <li>
+                            <a id="links" href="#">Overview</a>
                         </li>
-                        <li id="links">
-                            <a href="#">Production</a>
+                        <li>
+                            <a id="links" href="production.html">Production</a>
                         </li>
-                        <li id="links">
-                            <a href="#">Sales</a>
+                        <li>
+                            <a id="sales" href="#">Sales</a>
                         </li>
-                        <li id="links">
-                            <a href="#">Plans</a>
+                        <li>
+                            <a id="links" href="#">Plans</a>
                         </li>
                     </ul>
             
                     <ul class="sidebar-list">
-                        <!-- <li> -->
-                            <a id="logout" href="index.html">Log Out</a>
+                        <!-- <li class="logout"> -->
+                            <a id="logout" href="#">Log Out</a>
                         <!-- </li> -->
                     </ul>
                 </aside>
@@ -56,10 +56,11 @@
                             <p>Andrew Ochieng</p>
                         </div>
                     </div>
+                    
 
-                    <!--milk-production-->
+                    <!--sales-report-->
                     <div class="production-title">
-                        <h1>Milk Production</h1>
+                        <h1>Sales Report</h1>
                         <div>
                             <div class="production-inputs">
                                 <input type="text" id="milk" placeholder="Enter daily milk production..">
@@ -69,7 +70,7 @@
                             </div>
                         </div>
                         
-                        <!--milk-production-display-->
+                        <!--sales-reort-display-->
                         <div>
                             <!--total milk in all shades-->
                             <table>
@@ -101,20 +102,6 @@
                               </table> 
                         </div>
 
-                    </div>
-                    
-
-                    <!--milk-sales-->
-                    <div class="sales">
-                        <h1>Milk Sales</h1>
-                        <div>
-                            <div class="sales-inputs">
-                                <input type="text" id="input-sales" placeholder="Enter daily milk production..">
-                                <button id="sales-submit">
-                                    Submit
-                                </button>
-                            </div>
-                        </div>
                     </div>
 
                 </div>

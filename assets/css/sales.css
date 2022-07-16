@@ -56,14 +56,14 @@ body {
     font-weight: 900;
 }
 
-#overview {
+#sales {
     border: none;
     border-radius: 10px;
     padding: 6% 16%;
     background-color: #E1FC67;
 }
 
-#overview:hover {
+#sales:hover {
     border: none;
     border-radius: 10px;
     padding: 6% 16%;

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ukulima Farm</title>
+    <link rel="stylesheet" href="./assets/css/production.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <!-- dashboard -->
+    <section>
+        <div class="dashboard">
+
+            <!--sidebar-->
+            <div class="sidebar-container">
+                <aside class="sidebar">
+                    <ul class="sidebar-list">
+                        <div class="logo">
+                            <h1>Ukulima Farm</h1>
+                        </div>
+                        <li>
+                            <a id="links" href="#">Overview</a>
+                        </li>
+                        <li>
+                            <a id="production" href="#">Production</a>
+                        </li>
+                        <li>
+                            <a id="links" href="sales.html">Sales</a>
+                        </li>
+                        <li>
+                            <a id="links" href="#">Plans</a>
+                        </li>
+                    </ul>
+            
+                    <ul class="sidebar-list">
+                        <!-- <li> -->
+                            <a id="logout" href="#!">Log Out</a>
+                        <!-- </li> -->
+                    </ul>
+                </aside>
+            </div>
+
+            <!--main-content-->
+            <div class="main-content">
+                <div class="col-content">
+                    <!--content-header-->
+                    <div class="dashboard-title">
+                        <div>
+                            <h2>Good <span id="time"></span> Andrew!</h2>
+                        </div>
+                        <div class="profile">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            <p>Andrew Ochieng</p>
+                        </div>
+                    </div>
+
+                    <!--milk-production-->
+                    <div class="production-title">
+                        <h1>Milk Production</h1>
+                        <div>
+                            <!--inputs-->
+                            <form id="form-inputs" method="post">
+                                <div class="duration">
+                                    <div class="select">
+                                        <label for="day">Day</label>
+                                        <select name="day" id="day">
+                                            <option value="monday">Monday</option>
+                                            <option value="tuesday">Tuesday</option>
+                                            <option value="wednesday">Wednesday</option>
+                                            <option value="thursday">Thursday</option>
+                                            <option value="friday">Friday</option>
+                                            <option value="saturday">Saturday</option>
+                                            <option value="sunday">Sunday</option>
+                                        </select>
+                                    </div>
+                                    <div class="select">
+                                        <label for="week">Week</label>
+                                        <select name="week" id="week">
+                                            <option value="one">1</option>
+                                            <option value="two">2</option>
+                                            <option value="three">3</option>
+                                            <option value="four">4</option>
+                                        </select>
+                                    </div>
+                                    <div class="select">
+                                        <label for="month">Month</label>
+                                        <select name="month" id="month">
+                                            <option value="January">January</option>
+                                            <option value="February">February</option>
+                                            <option value="March">March</option>
+                                            <option value="April">April</option>
+                                            <option value="May">May</option>
+                                            <option value="June">June</option>
+                                            <option value="July">July</option>
+                                            <option value="August">August</option>
+                                            <option value="September">September</option>
+                                            <option value="October">October</option>
+                                            <option value="November">November</option>
+                                            <option value="December">December</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="production-details">
+                                    <div class="details-input">
+                                        <label for="Day Of Week">Shade Number</label>
+                                        <input type="text" id="day" placeholder="Enter shade number..">
+                                    </div>
+                                    <div class="details-input">
+                                        <label for="week-number">Amount of Milk/day</label>
+                                        <input type="text" id="day" placeholder="Enter amount of milk/day..">
+                                    </div>
+                                    <div>
+                                        <input id="submit" type="submit" value="Submit">
+                                    </div>
+                                </div>
+                            </form>
+                            
+                        </div>
+                        
+                        <!--milk-production-display-->
+                        <div>
+                            <!--total milk in all shades-->
+                            <table>
+                                <tr>
+                                  <th>Shades</th>
+                                  <th>Amount of Milk recived per day</th>
+                                  <th>Enter milk amounts</th>
+                                </tr>
+                                <tr>
+                                    <td>A</td>
+                                    <td>Your productionin shade A per day is: {{ milk }}</td>
+                                    <td>Edit</td>
+                                </tr>
+                                <tr>
+                                    <td>B</td>
+                                    <td>Your productionin shade B per day is: {{ milk }}</td>
+                                    <td>Edit</td>
+                                </tr>
+                                <tr>
+                                    <td>C</td>
+                                    <td>Your productionin shade B per day is: {{ milk }}</td>
+                                    <td>Edit</td>
+                                </tr>
+                                <tr>
+                                    <td>D</td>
+                                    <td>Your productionin shade B per day is: {{ milk }}</td>
+                                    <td>Edit</td>
+                                </tr>
+                              </table> 
+                        </div>
+
+                    </div>
+                    
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+
+    
+
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>

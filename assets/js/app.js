@@ -20,12 +20,20 @@ greetings()
 
 
 
-//arrays 
-let shades = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
+//inputs
+const inputs = document.getElementById('form-inputs');
+
+inputs.addEventListener('submit', (e) => {
+    e.preventDefault()
+
+    submitInputs()
+})
 
 
-
-
+let submitInputs = () => {
+    // console.log('hey the code worked :)')
+    
+}
 
 
 
