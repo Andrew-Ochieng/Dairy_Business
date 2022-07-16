@@ -6,7 +6,6 @@
 * {
     padding: 0;
     margin: 0;
-    /* font-family: 'Poppins', sans-serif; */
 }
 
 body {
@@ -42,6 +41,10 @@ body {
     gap: 32px;
 }
 
+.sidebar-list li {
+    cursor: pointer;
+}
+
 .sidebar-list li a {
     color: black;
     font-weight: 500;
@@ -75,12 +78,13 @@ body {
 }
 
 #logout {
-    font-size: 800;
+    font-weight: 700;
     color: black;
     border: none;
     border-radius: 10px;
     padding: 6% 12%;
     background-color: white;
+    text-decoration: none;
 }
 
 
@@ -90,7 +94,6 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* background-color: #E1FC67; */
     padding: 2% 4%;
 }
 
