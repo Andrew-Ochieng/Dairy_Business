@@ -106,12 +106,12 @@
 
                                 <div class="production-details">
                                     <div class="details-input">
-                                        <label for="Day Of Week">Shade Number</label>
-                                        <input type="text" id="day" placeholder="Enter shade number..">
+                                        <label for="shade-nuber">Shade Number</label>
+                                        <input type="text" id="shade-num" placeholder="Enter shade number..">
                                     </div>
                                     <div class="details-input">
-                                        <label for="week-number">Amount of Milk/day</label>
-                                        <input type="text" id="day" placeholder="Enter amount of milk/day..">
+                                        <label for="milk-amount">Amount of Milk/day</label>
+                                        <input type="text" id="milk-amount" placeholder="Enter amount of milk/day..">
                                     </div>
                                     <div>
                                         <input id="submit" type="submit" value="Submit">
@@ -124,33 +124,10 @@
                         <!--milk-production-display-->
                         <div>
                             <!--total milk in all shades-->
-                            <table>
-                                <tr>
-                                  <th>Shades</th>
-                                  <th>Amount of Milk recived per day</th>
-                                  <th>Enter milk amounts</th>
-                                </tr>
-                                <tr>
-                                    <td>A</td>
-                                    <td>Your productionin shade A per day is: {{ milk }}</td>
-                                    <td>Edit</td>
-                                </tr>
-                                <tr>
-                                    <td>B</td>
-                                    <td>Your productionin shade B per day is: {{ milk }}</td>
-                                    <td>Edit</td>
-                                </tr>
-                                <tr>
-                                    <td>C</td>
-                                    <td>Your productionin shade B per day is: {{ milk }}</td>
-                                    <td>Edit</td>
-                                </tr>
-                                <tr>
-                                    <td>D</td>
-                                    <td>Your productionin shade B per day is: {{ milk }}</td>
-                                    <td>Edit</td>
-                                </tr>
-                              </table> 
+                            <div class="daily-output">
+                                <ul id="shade-output"></ul>
+                                <ul id="milk-output"></ul>
+                            </div>
                         </div>
 
                     </div>
