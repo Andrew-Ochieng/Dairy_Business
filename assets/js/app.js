@@ -29,6 +29,10 @@ const shedB = document.getElementById('shed-b')
 const shedC = document.getElementById('shed-c')
 const shedD = document.getElementById('shed-d')
 
+const weeklySales = document.getElementById('weekly-sales')
+const yearlySales = document.getElementById('yearly-sales')
+
+
 
 // add event listener
 inputs.addEventListener('submit', (e) => {
@@ -48,19 +52,18 @@ let totalProduction = () => {
         document.getElementById('shedC-report').innerHTML = shedC.value
         document.getElementById('shedD-report').innerHTML = shedD.value
 
-        // loop through sheds
-        // const sheds = ['A', 'B', 'C', 'D']
-
-        // for (let i = 0; i < sheds.length; i++) {
-        //     const element = sheds[i];
-             
-        // }
-
 
         // display daily total 
+        
         let dailyTotal = document.getElementById('daily-total') 
         dailyTotal.innerHTML = Number(shedA.value) + Number(shedB.value) + Number(shedC.value) + Number(shedD.value)
     
+        
+        // function to output sales
+        weeklySales.innerHTML = dailyTotal.innerHTML * 45 *7
+        yearlySales.innerHTML = dailyTotal.innerHTML * 45 * 365
+        
+        
     } else {
         console.log('inputs cannot be empty!')
     }
