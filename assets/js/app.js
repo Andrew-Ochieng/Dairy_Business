@@ -42,27 +42,17 @@ inputs.addEventListener('submit', (e) => {
 
 let totalProduction = () => {
     if (shedA != '' && shedB != '' && shedC != '' && shedD != '') {
-        // creating new element and adding value to it
-        let newShedA = document.createElement('LI')
-        newShedA.appendChild(document.createTextNode(shedA.value))
+        //display input values in daily report
+        document.getElementById('shedA-report').innerHTML = shedA.value
+        document.getElementById('shedB-report').innerHTML = shedB.value
+        document.getElementById('shedC-report').innerHTML = shedC.value
+        document.getElementById('shedD-report').innerHTML = shedD.value
 
-        let newShedB = document.createElement('LI')
-        newShedB.appendChild(document.createTextNode(shedB.value))
 
-        let newShedC = document.createElement('LI')
-        newShedC.appendChild(document.createTextNode(shedC.value))
-
-        let newShedD = document.createElement('LI')
-        newShedD.appendChild(document.createTextNode(shedD.value))
-
-        //adding li to ul
-        dailyReport.appendChild(newShedA)
-        weeklyReport.appendChild(newShedB)
-        dailyReport.appendChild(newShedC)
-        dailyReport.appendChild(newShedD)
-
-        // dailyFinalReport = 'Your production in Shed A is' + dailyReport
-
+        // display daily total 
+        let dailyTotal = document.getElementById('daily-total') 
+        let x = dailyTotal.innerHTML 
+        x = Number(shedA.value) + Number(shedB.value) + Number(shedC.value) + Number(shedD.value)
     } else {
         console.log('inputs cannot be empty!')
     }
@@ -80,10 +70,13 @@ totalProduction()
 
 
 // income function
-// let incomeOverTime = () => {
+
+// function incomeOverTime (selling_price, time) {
+    
 
 // }
 
+// incomeOverTime(45, 7)
 
 
 

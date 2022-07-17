@@ -216,12 +216,19 @@ select {
 
 
 /* milk-production-display */
-.daily-output {
+.report-title, .reports {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.daily-report, .weekly-report {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: #dafb41;
     padding: 2% 4%;
+    margin: 2% 0;
     border-radius: 10px;
     list-style: none;  
 }
@@ -230,14 +237,21 @@ select {
     list-style: none;
 }
 
-.daily-output span {
+.report-title, .weekly-rep {
+    padding: 2% 0;
     font-weight: 600;
     color: #14664b;
 }
 
+#shedA-report, #shedB-report, #shedC-report, #shedD-report, #daily-total {
+    color: #14664b;
+    font-weight: 600;
+}
 
-
-
+.daily-totals {
+    padding: 2% 0 0 0;
+    font-weight: 600;
+}
 
 
 
