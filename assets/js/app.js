@@ -48,11 +48,19 @@ let totalProduction = () => {
         document.getElementById('shedC-report').innerHTML = shedC.value
         document.getElementById('shedD-report').innerHTML = shedD.value
 
+        // loop through sheds
+        // const sheds = ['A', 'B', 'C', 'D']
+
+        // for (let i = 0; i < sheds.length; i++) {
+        //     const element = sheds[i];
+             
+        // }
+
 
         // display daily total 
         let dailyTotal = document.getElementById('daily-total') 
-        let x = dailyTotal.innerHTML 
-        x = Number(shedA.value) + Number(shedB.value) + Number(shedC.value) + Number(shedD.value)
+        dailyTotal.innerHTML = Number(shedA.value) + Number(shedB.value) + Number(shedC.value) + Number(shedD.value)
+    
     } else {
         console.log('inputs cannot be empty!')
     }
