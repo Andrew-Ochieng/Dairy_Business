@@ -143,23 +143,6 @@ body {
 }
 
 
-/* milk-production */
-.production-inputs {
-    margin: 4% 0;
-}
-
-#milk {
-    padding: 1% 3%;
-    border: 2px 2px #36856c;
-}
-
-#milk-submit {
-    padding: 1.2% 3%;
-    border: none;
-    background-color: #36856c;
-}
-
-
 /* milk-production-input */
 #form-inputs {
     display: flex;
@@ -168,24 +151,6 @@ body {
     margin: 4% 0;
 }
 
-.select {
-    display: flex;
-    flex-direction: column;
-    margin: 0 0 16% 0;
-}
-
-.select label {
-    padding: 0 0 4% 0;
-    font-weight: 600;
-}
-
-select {
-    padding: 8%;
-    border-radius: 10px;
-}
-
-
-/* production-details */
 .details-input {
     display: flex;
     flex-direction: column;

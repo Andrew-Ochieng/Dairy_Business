@@ -29,9 +29,10 @@ const shedB = document.getElementById('shed-b')
 const shedC = document.getElementById('shed-c')
 const shedD = document.getElementById('shed-d')
 
+// sales
 const weeklySales = document.getElementById('weekly-sales')
 const yearlySales = document.getElementById('yearly-sales')
-
+const leapYearSales = document.getElementById('leap-year')
 
 
 // add event listener
@@ -59,9 +60,10 @@ let totalProduction = () => {
         dailyTotal.innerHTML = Number(shedA.value) + Number(shedB.value) + Number(shedC.value) + Number(shedD.value)
     
         
-        // function to output sales
+        // output sales
         weeklySales.innerHTML = dailyTotal.innerHTML * 45 *7
         yearlySales.innerHTML = dailyTotal.innerHTML * 45 * 365
+        leapYearSales.innerHTML = dailyTotal.innerHTML * 45 * 366
         
         
     } else {
@@ -77,14 +79,13 @@ let totalProduction = () => {
     
 }
 
-totalProduction()
+// totalProduction()
 
 
 // income function
 
-// function incomeOverTime (selling_price, time) {
-    
-
+// let incomeOverTime = (selling_price, time) => {
+//     const months = ['January', 'February', 'March', 'April', 'June']
 // }
 
 // incomeOverTime(45, 7)
