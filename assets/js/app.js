@@ -23,7 +23,7 @@ greetings()
 // production variables
 const milkAmount = document.getElementById('milk-amount')
 const inputs = document.getElementById('form-inputs');
-const dailyReport = document.getElementById('daily-report')
+// const dailyReport = document.getElementById('daily-report')
 const shedA = document.getElementById('shed-a')
 const shedB = document.getElementById('shed-b')
 const shedC = document.getElementById('shed-c')
@@ -53,20 +53,17 @@ let totalProduction = () => {
         document.getElementById('shedC-report').innerHTML = shedC.value
         document.getElementById('shedD-report').innerHTML = shedD.value
 
-
         // display daily total 
-        
-        let dailyTotal = document.getElementById('daily-total') 
+        let dailyTotal = document.getElementById('prod') 
         dailyTotal.innerHTML = Number(shedA.value) + Number(shedB.value) + Number(shedC.value) + Number(shedD.value)
     
-        
-        // output sales
-        weeklySales.innerHTML = dailyTotal.innerHTML * 45 *7
-        yearlySales.innerHTML = dailyTotal.innerHTML * 45 * 365
-        leapYearSales.innerHTML = dailyTotal.innerHTML * 45 * 366
-        
+        // daily sales report
+        let dailySales = document.getElementById('daily-sales').innerHTML
+        dailySales.innerHTML  = dailyTotal.innerHTML * 45
+
         
     } else {
+        
         console.log('inputs cannot be empty!')
     }
 
@@ -75,26 +72,19 @@ let totalProduction = () => {
     shedB.value = '';
     shedC.value = '';
     shedD.value = '';
-    
-    
+      
 }
 
-// totalProduction()
 
 
-// income function
+// add year in copyright
+const newYear = new Date()
 
-// let incomeOverTime = (selling_price, time) => {
-//     const months = ['January', 'February', 'March', 'April', 'June']
-// }
+let year = newYear.getFullYear()
 
-// incomeOverTime(45, 7)
-
-
-
-
-
-
-
+let currentYear = document.getElementById('year')
+currentYear.append(year)
+currentYear.style.color = '#36856c'
+currentYear.style.fontWeight = '600'
 
 

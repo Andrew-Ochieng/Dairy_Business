@@ -181,46 +181,56 @@ body {
 
 
 /* milk-production-display */
-.report-title, .reports {
+.reports {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-
-.daily-report, .weekly-report {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #dafb41;
     padding: 2% 4%;
     margin: 2% 0;
     border-radius: 10px;
+    background-color: #dafb41;
+}
+
+.daily-report h3 {
+    color: #14664b;
+}
+.daily-report ul {
     list-style: none;  
 }
 
-.daily-output li {
-    list-style: none;
+.daily-report li {
+    padding: 4% 0;
 }
 
-.report-title, .weekly-rep {
-    padding: 2% 0;
-    font-weight: 600;
-    color: #14664b;
-}
 
 #shedA-report, #shedB-report, #shedC-report, #shedD-report, #daily-total {
     color: #14664b;
     font-weight: 600;
 }
 
-.daily-totals {
-    padding: 2% 0 0 0;
-    font-weight: 600;
+.totals {
+    font-size: 20px;
+    font-weight: 500;
+    color: #14664b;
+    /* padding: 2% 0 0 0; */
+    margin: 4% 0 8% 0;
+}
+
+.totals p {
+    padding: 4% 0;
+}
+
+#prod, #daily-sales {
+    font-weight: 700;
+    color: black;
 }
 
 
-
-
+/* footer */
+footer {
+    margin: 4% 0;
+    text-align: center;
+}
 
 
 
